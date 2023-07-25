@@ -1,9 +1,9 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: About Me
+  key: About Us
   order: 3
 ---
-# About Me
+# About Us
 
-I am a person that writes stuff.
+sheepdog is an automation and ai development studio in midwales
