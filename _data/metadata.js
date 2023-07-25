@@ -1,6 +1,6 @@
 module.exports = {
-	title: "sheepdog - automation and ai",
+	title: "sheepdog automation and ai",
 	url: "https://sh.eep.dog/",
 	language: "en",
-	description: "midwales automation and ai devlopement",
+	description: "automation and ai devlopement in midwales",
 }
