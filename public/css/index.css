@@ -292,3 +292,15 @@ footer {
 .legal-link:link:not(:hover) {
 	text-decoration: none;
 }
+
+.dark-mode {
+	--color-gray-20: #e0e0e0;
+  --color-gray-50: #C0C0C0;
+  --color-gray-90: #dad8d8;
+
+  --text-color-link: #1493fb;
+  --text-color-link-active: #6969f7;
+  --text-color-link-visited: #a6a6f8;
+
+  --background-color: #15202b;
+}
