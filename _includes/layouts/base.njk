@@ -6,6 +6,15 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 
+	{#- dgd - generate metatags from front matter #}
+<meta property="og:title" content="{{ title or metadata.title }}"/>
+		<meta property="og:description" content="{{description or medata.description}}" />
+		<meta property="og:url" content="{{ page.url }}" />
+ 		<meta property="og:type" content="article" />
+	{% if postimage %}
+    <meta property="og:image" content="{% image2 postimage %}" />
+  {% endif %}
+
 
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
