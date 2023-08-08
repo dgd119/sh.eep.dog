@@ -316,3 +316,13 @@ a.logo-link {
 a.logo-link:hover {
   background-color: inherit;
 }
+/* Default style for light mode */
+.st0 {
+  fill: #FFFFFF; /* or whatever color you want for light mode */
+}
+
+/* Style for dark mode */
+.dark-mode .st0 {
+  fill: #000000; /* or whatever color you want for dark mode */
+}
+
