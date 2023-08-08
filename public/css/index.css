@@ -318,7 +318,7 @@ a.logo-link:hover {
 }
 /* Default style for light mode */
 .st0 {
-  fill: #FFFFFF; /* or whatever color you want for light mode */
+  fill: #FFC0CB;; /* or whatever color you want for light mode */
 }
 
 /* Style for dark mode */
