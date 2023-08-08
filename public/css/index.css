@@ -158,6 +158,11 @@ header {
 .home-link:link:not(:hover) {
 	text-decoration: none;
 }
+.logo img {
+  height: 50px; /* Adjust as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text, if needed */
+}
 
 /* Nav */
 .nav {
