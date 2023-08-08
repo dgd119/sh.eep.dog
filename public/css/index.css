@@ -318,11 +318,18 @@ a.logo-link:hover {
 }
 /* Default style for light mode */
 .st0 {
-  fill: #FFC0CB;; /* or whatever color you want for light mode */
+  fill: #FFC0CB; /* or whatever color you want for light mode */
+}
+
+.st1 {
+  fill: #15202b; /* or whatever color you want for light mode */
 }
 
 /* Style for dark mode */
 .dark-mode .st0 {
   fill: #15202b; /* or whatever color you want for dark mode */
+}
+.st1 {
+  fill: #FFC0CB; /* or whatever color you want for light mode */
 }
 
