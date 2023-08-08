@@ -274,6 +274,8 @@ h2 + .header-anchor {
 	font-size: 1.5em;
 }
 
+/*added to base template */
+
 /* Footer */
 footer {
 	display: flex;
@@ -292,3 +294,43 @@ footer {
 .legal-link:link:not(:hover) {
 	text-decoration: none;
 }
+
+.dark-mode {
+	--color-gray-20: #e0e0e0;
+  --color-gray-50: #C0C0C0;
+  --color-gray-90: #dad8d8;
+
+  --text-color-link: #1493fb;
+  --text-color-link-active: #6969f7;
+  --text-color-link-visited: #a6a6f8;
+
+  --background-color: #15202b;
+}
+
+a.logo-link {
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  margin: 8px;
+}
+a.logo-link:hover {
+  background-color: inherit;
+}
+/* Default style for light mode */
+.st0 {
+	fill: #15202b; /* or whatever color you want for dark mode */
+}
+
+.st1 {
+  fill: #FFFFFF; /* or whatever color you want for light mode */
+}
+
+/* Style for dark mode */
+.dark-mode .st0 {
+  fill: #FFFFFF; /* or whatever color you want for light mode */
+}
+.dark-mode .st1 {
+	fill: #15202b; /* or whatever color you want for light mode */
+}
+
+
