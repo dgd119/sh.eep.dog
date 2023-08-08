@@ -1,13 +1,13 @@
-  const toggleButton = document.getElementById('dark-mode-toggle');
-  const body = document.body;
+const toggleButton = document.getElementById('dark-mode-toggle');
+const htmlElement = document.documentElement; // Reference to the HTML element
 
-  toggleButton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    localStorage.setItem('dark-mode', body.classList.contains('dark-mode') ? 'true' : 'false');
-  });
+toggleButton.addEventListener('click', () => {
+  htmlElement.classList.toggle('dark-mode'); // Toggles the class on the HTML element
+  localStorage.setItem('dark-mode', htmlElement.classList.contains('dark-mode') ? 'true' : 'false');
+});
 
-  // Load the saved mode on page load
-  if (localStorage.getItem('dark-mode') === 'true') {
-    body.classList.add('dark-mode');
-  }
+// Load the saved mode on page load
+if (localStorage.getItem('dark-mode') === 'true') {
+  htmlElement.classList.add('dark-mode'); // Adds the class to the HTML element
+}
 
