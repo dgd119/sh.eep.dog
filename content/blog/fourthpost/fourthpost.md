@@ -1,18 +1,14 @@
 ---
-title: This is my fourth post.
-description: This is a post on My Blog about touchpoints and circling wagons.
-date: 2018-09-30
-tags: second tag
-draft: true
+title: Welcome to Sheepdog.
+description: This is a first post to test out formatting and social share metadata.
+date: 2023-08-09
+tags: sheepdog
+draft: false
+postimage: "./shpdg.png"
 
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+We are going to be using the blog to write about things occasionally.  So we need social share metadata to be working and we need images to display nicely.  This is a test post to check both these things are up and running as they should be.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+{% image "./shpdg1.png", "A pop art robot sheepdog in the Black Mountans" %}
 
-{% image "./possum.png", "A possum parent and two possum kids hanging from the iconic red balloon" %}
-
-## Section Header
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
+There should be a nice colourful picture here resized for all devices.  The same picture should show in twitter/mastadon/linked in etc if we post a link to this post.
