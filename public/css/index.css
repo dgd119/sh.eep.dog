@@ -158,11 +158,7 @@ header {
 .home-link:link:not(:hover) {
 	text-decoration: none;
 }
-.logo img {
-  height: 50px; /* Adjust as needed */
-  width: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Space between logo and text, if needed */
-}
+
 
 /* Nav */
 .nav {
@@ -311,7 +307,6 @@ a.logo-link {
   border: none;
   box-shadow: none;
   cursor: pointer;
-  margin: 8px;
 }
 a.logo-link:hover {
   background-color: inherit;
@@ -322,7 +317,7 @@ a.logo-link:hover {
 }
 
 .st1 {
-  fill: #FFFFFF; /* or whatever color you want for light mode */
+	fill: #FFFFFF; /* or whatever color you want for light mode */
 }
 
 /* Style for dark mode */
@@ -333,9 +328,12 @@ a.logo-link:hover {
 	fill: #15202b; /* or whatever color you want for light mode */
 }
 
-img {
+/* img {
 	max-width: 100%;
 	height: auto;
-   }
+   } */
 
+   .home-link svg {
+    vertical-align: bottom;
+}
 
