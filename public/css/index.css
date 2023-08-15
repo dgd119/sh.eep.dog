@@ -328,10 +328,10 @@ a.logo-link:hover {
 	fill: #15202b; /* or whatever color you want for light mode */
 }
 
-/* img {
+img {
 	max-width: 100%;
 	height: auto;
-   } */
+   }
 
    .home-link svg {
     vertical-align: bottom;
