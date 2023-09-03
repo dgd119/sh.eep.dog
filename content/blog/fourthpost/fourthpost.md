@@ -4,7 +4,7 @@ description: This is a first post to test out formatting and social share metada
 date: 2023-08-09
 tags: sheepdog
 draft: false
-postimage: "./shpdg.png"
+postimage: "./shpdg1.png"
 
 ---
 We are going to be using the blog to write about things occasionally.  So we need social share metadata to be working and we need images to display nicely.  This is a test post to check both these things are up and running as they should be.
