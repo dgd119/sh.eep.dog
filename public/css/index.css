@@ -20,7 +20,7 @@
 	--syntax-tab-size: 2;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	:root {
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #C0C0C0;
@@ -33,7 +33,7 @@
 
 		--background-color: #15202b;
 	}
-}
+} */
 
 
 /* Global stylesheet */
@@ -320,11 +320,19 @@ a.logo-link:hover {
 	fill: #FFFFFF; /* or whatever color you want for light mode */
 }
 
+.st3 {
+	fill: #15202b;  /* or whatever color you want for light mode */
+}
+
 /* Style for dark mode */
 .dark-mode .st0 {
   fill: #FFFFFF; /* or whatever color you want for light mode */
 }
 .dark-mode .st1 {
+	fill: #15202b; /* or whatever color you want for light mode */
+}
+
+.dark-mode .st3 {
 	fill: #15202b; /* or whatever color you want for light mode */
 }
 
