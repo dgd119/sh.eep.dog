@@ -1,7 +1,8 @@
-const toggleButton = document.getElementById('dark-mode-toggle');
+const svgElement = document.querySelector('#dark-mode-toggle');
 const htmlElement = document.documentElement; // Reference to the HTML element
 
-toggleButton.addEventListener('click', () => {
+svgElement.addEventListener('click', () => {
+  console.log("clicked");
   htmlElement.classList.toggle('dark-mode'); // Toggles the class on the HTML element
   localStorage.setItem('dark-mode', htmlElement.classList.contains('dark-mode') ? 'true' : 'false');
 });

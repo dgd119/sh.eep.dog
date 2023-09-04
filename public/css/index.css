@@ -328,6 +328,8 @@ a.logo-link:hover {
 	fill: #15202b; /* or whatever color you want for light mode */
 }
 
+
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -337,3 +339,12 @@ img {
     vertical-align: bottom;
 }
 
+/* Default fill color (for light mode) */
+#dark-mode-toggle {
+    fill: black /* Example color for light mode */
+}
+
+/* Fill color when in dark mode */
+.dark-mode #dark-mode-toggle {
+    fill: white /* Example color for dark mode */
+}
