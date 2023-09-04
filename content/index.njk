@@ -2,7 +2,7 @@
 layout: layouts/home.njk
 numberOfLatestPostsToShow: 3
 ---
-{% set postsCount = collections.posts | length %}
+<!-- {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 
@@ -23,4 +23,15 @@ numberOfLatestPostsToShow: 3
 	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
 	{%- endfor %}
 </ul>
-#}
+#} -->
+
+<figure>
+	{% image "./sheepdog.png", "pop art fig leaf painting framed on wall" %}
+	 <figcaption>Free up you time, cut down your costs, please you customers.</figcaption>
+   </figure>
+<p>Small businesses have new weapons in their arsenal - automation and ai. Are you using them yet?
+	It's not just about saving a few pounds. It's about freeing up time and mental bandwidth and foucussing on the bigger picture.  Organise your automation, and you’ll find you've suddenly got the breathing room to think big, to innovate, and to hustle harder.  </p>
+	
+	<p>This isn’t just evolution; it’s a revolution. Don't get left on the hillside.</p>
+<h4>Get Started</h4>
+
