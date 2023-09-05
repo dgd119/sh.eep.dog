@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Contact
+  order: 4
+---
+
+<div class="form-container">
+<form name="contact" method="POST" netlify action="/thankyou">
+          <div class="form-row">
+            <input type="text" name="name"  placeholder='name' />
+          </div>
+          
+          <div class="form-row">            <input type="email" name="email"  placeholder='email' />
+          </div>
+          
+          <div class="form-row">
+            <textarea name="message" placeholder = 'message'></textarea>
+          </div>
+          
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+        
+      </div>  </div>
+
