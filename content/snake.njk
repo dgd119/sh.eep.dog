@@ -164,13 +164,21 @@ h2 {
 
             <div id="canvas">
 
-            </div> </div>
+            </div> </div> 
+            <div class="control-buttons">
+              <button id="btnUp">Up</button>
+              <button id="btnRight">Right</button>
+              <button id="btnDown">Down</button>
+              <button id="btnLeft">Left</button>
+          </div>
+          
+          
             <div id="ui">
                 <h2>SCORE
                 </h2>
                 <span id="score">00</span>
             </div>
-          <button id="replay">
+         <button id="replay">
               <i class="fas fa-play"></i>
               RESTART
           </button>
@@ -305,6 +313,82 @@ let helpers = {
     return start * (1 - t) + end * t;
   }
 };
+// let KEY = {
+//   ArrowUp: false,
+//   ArrowRight: false,
+//   ArrowDown: false,
+//   ArrowLeft: false,
+//   resetState() {
+//     this.ArrowUp = false;
+//     this.ArrowRight = false;
+//     this.ArrowDown = false;
+//     this.ArrowLeft = false;
+//   },
+//   listen() {
+//     // Listen for button clicks
+//     document.getElementById("btnUp").addEventListener('click', (e) => {
+//       this.updateDirection("ArrowUp");
+//     });
+
+//     document.getElementById("btnRight").addEventListener('click', (e) => {
+//       this.updateDirection("ArrowRight");
+//     });
+
+//     document.getElementById("btnDown").addEventListener('click', (e) => {
+//       this.updateDirection("ArrowDown");
+//     });
+
+//     document.getElementById("btnLeft").addEventListener('click', (e) => {
+//       this.updateDirection("ArrowLeft");
+//     });
+//   },
+//   updateDirection(dir) {
+//     if (dir === "ArrowUp" && this.ArrowDown) return;
+//     if (dir === "ArrowDown" && this.ArrowUp) return;
+//     if (dir === "ArrowLeft" && this.ArrowRight) return;
+//     if (dir === "ArrowRight" && this.ArrowLeft) return;
+
+//     this[dir] = true;
+//     Object.keys(this)
+//       .filter(f => f !== dir && f !== "listen" && f !== "resetState" && f !== "updateDirection")
+//       .forEach(k => {
+//         this[k] = false;
+//       });
+//   }
+// };
+
+// KEY.listen();
+
+// let KEY = {
+//   ArrowUp: false,
+//   ArrowRight: false,
+//   ArrowDown: false,
+//   ArrowLeft: false,
+//   resetState() {
+//     this.ArrowUp = false;
+//     this.ArrowRight = false;
+//     this.ArrowDown = false;
+//     this.ArrowLeft = false;
+//   },
+//   listen() {
+//     addEventListener(
+//       "keydown",
+//       (e) => {
+//         if (e.key === "ArrowUp" && this.ArrowDown) return;
+//         if (e.key === "ArrowDown" && this.ArrowUp) return;
+//         if (e.key === "ArrowLeft" && this.ArrowRight) return;
+//         if (e.key === "ArrowRight" && this.ArrowLeft) return;
+//         this[e.key] = true;
+//         Object.keys(this)
+//           .filter((f) => f !== e.key && f !== "listen" && f !== "resetState")
+//           .forEach((k) => {
+//             this[k] = false;
+//           });
+//       },
+//       false
+//     );
+//   }
+// };
 
 let KEY = {
   ArrowUp: false,
@@ -317,25 +401,34 @@ let KEY = {
     this.ArrowDown = false;
     this.ArrowLeft = false;
   },
-  listen() {
-    addEventListener(
-      "keydown",
-      (e) => {
-        if (e.key === "ArrowUp" && this.ArrowDown) return;
-        if (e.key === "ArrowDown" && this.ArrowUp) return;
-        if (e.key === "ArrowLeft" && this.ArrowRight) return;
-        if (e.key === "ArrowRight" && this.ArrowLeft) return;
-        this[e.key] = true;
-        Object.keys(this)
-          .filter((f) => f !== e.key && f !== "listen" && f !== "resetState")
-          .forEach((k) => {
-            this[k] = false;
-          });
-      },
-      false
-    );
+  updateDirection(dir) {
+    if (dir === "ArrowUp" && this.ArrowDown) return;
+    if (dir === "ArrowDown" && this.ArrowUp) return;
+    if (dir === "ArrowLeft" && this.ArrowRight) return;
+    if (dir === "ArrowRight" && this.ArrowLeft) return;
+
+    this[dir] = true;
+    Object.keys(this)
+      .filter(f => f !== dir && f !== "updateDirection" && f !== "resetState")
+      .forEach(k => {
+        this[k] = false;
+      });
   }
 };
+
+// Attach button click event listeners
+document.getElementById("btnUp").addEventListener('click', () => KEY.updateDirection("ArrowUp"));
+document.getElementById("btnRight").addEventListener('click', () => KEY.updateDirection("ArrowRight"));
+document.getElementById("btnDown").addEventListener('click', () => KEY.updateDirection("ArrowDown"));
+document.getElementById("btnLeft").addEventListener('click', () => KEY.updateDirection("ArrowLeft"));
+
+// Attach keydown event listeners
+addEventListener("keydown", (e) => {
+  if (["ArrowUp", "ArrowRight", "ArrowDown", "ArrowLeft"].includes(e.key)) {
+    KEY.updateDirection(e.key);
+  }
+});
+
 
 class Snake {
   constructor(i, type) {
@@ -510,7 +603,7 @@ function clear() {
 
 function initialize() {
   CTX.imageSmoothingEnabled = false;
-  KEY.listen();
+  
   cellsCount = cells * cells;
   cellSize = W / cells;
   snake = new Snake();
