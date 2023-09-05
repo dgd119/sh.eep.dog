@@ -432,3 +432,74 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+button:active {
+    /* styling for the active state of the button */
+    background-color: #ddd;
+    color: #333;
+    /* ... any other styles you want to apply */
+}
+
+.btn-active {
+	background-color: #ddd; /* or any other styling you'd like for an active button */
+  }
+  
+
+
+.control-buttons {
+	z-index: 1000; /* Ensure buttons are above other content */
+  }
+  
+  .arrow-button {
+	background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+	color: white;
+	border: none;
+	font-size: 24px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%; /* Make the buttons round */
+	margin: 5px;
+	cursor: pointer;
+	outline: none;
+  }
+  
+  #up-button {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  #left-button {
+	position: relative;
+	left: 0;
+  }
+  
+  #right-button {
+	position: relative;
+	left: 100%;
+	transform: translateX(-100%);
+  }
+  
+  #down-button {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .game-button-container {
+    display: flex;
+    justify-content: center; /* This will space out the links equally */
+    width: 100%;
+    max-width: 600px; /* or whatever maximum width you want */
+    padding: 10px;
+    
+}
+
+.score-container {
+    display: flex;
+    justify-content: center; /* This will space out the links equally */
+    width: 100%;
+    max-width: 600px; /* or whatever maximum width you want */
+    padding: 10px;
+   
+}
