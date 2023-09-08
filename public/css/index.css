@@ -369,9 +369,9 @@ figcaption {
     display: flex;
     justify-content: space-between; /* This will space out the links equally */
     width: 100%;
-    max-width: 600px; /* or whatever maximum width you want */
+    /* max-width: 600px; or whatever maximum width you want */
     padding: 10px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
 }
 
 .flex-container a {
@@ -503,3 +503,6 @@ button:active {
     padding: 10px;
    
 }
+/* * {
+	border: 1px solid red;
+  } */
