@@ -20,10 +20,11 @@ We specialize in providing small businesses with automation and AI solutions tai
 
 ## Why Choose Sheepdog?
 
-    **Expertise:** Founded by a software developer with a background in building call centre software solutions for blue-chip companies, experience in running a small business, and a master's degree in cognitive science. This unique blend of skills and knowledge equips us to help your business succeed with automation and AI solutions.
+    **Expertise:** Founded by a software developer with a background in building call centre software solutions for blue-chip companies, an MSc in Cognitive Science and experience of . This unique blend of skills and knowledge equips us to help your business succeed with automation and AI solutions.
 
     **Tailored Solutions:** We understand that every business is unique. That’s why we offer customized solutions to fit your specific needs and challenges.
     
     **Support:** We provide ongoing support to ensure your solutions are running smoothly and delivering the results you expect.
-    Cost-Effective: Our services are designed to be affordable and provide a strong return on investment.
+
+    **Cost-Effective:** Our services are designed to be affordable and provide a strong return on investment.
 
