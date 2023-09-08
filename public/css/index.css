@@ -367,8 +367,9 @@ figcaption {
 
   .flex-container {
     display: flex;
-    justify-content: space-between; /* This will space out the links equally */
+    justify-content: center; /* This will space out the links equally */
     width: 100%;
+	gap: clamp(10px, 2vw, 20px); /* Minimum 10px, preferred 2vw, maximum 20px */
     /* max-width: 600px; or whatever maximum width you want */
     padding: 10px;
     /* border: 1px solid #ccc; */
